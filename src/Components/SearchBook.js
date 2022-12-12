@@ -56,10 +56,9 @@ const SearchBook = ({data}) => {
             <div className='dataResult'>
               {searchData.slice(0,5).map((data,i)=>(
                 <ul key={i}>
-                  <p>{data.title}</p>
+                  <p onClick={()=>{handleClick(data.title)}}>{data.title}</p>
                 </ul>
               ))}
-
             </div>
           } 
       </div>
